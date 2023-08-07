@@ -1,3 +1,17 @@
-h1 {
-    color: red;
+#name {
+    text-align: center;
+    color: blue;
+    font-family: "Courier New", Times, serif;
+    margin: 60px;
+    font-size: 50px;
+    text-decoration: underline;
+    text-decoration-color: rgb(98, 98, 238);
+}
+
+#text {
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    font-size: 20px;
+    font-family: "Courier New", Times, serif;
 }
