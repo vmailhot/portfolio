@@ -4,112 +4,19 @@
     font-family: "Courier New", Times, serif;
     margin: 60px;
     font-size: 50px;
+    text-decoration: underline;
+    text-decoration-color: rgb(98, 98, 238);
 }
 
-.waveTextAnimated {
-    margin-top: 0.6em;
-    font-size: 50px;
+#text {
     text-align: center;
+    width: 70%;
+    margin: auto;
+    font-size: 20px;
+    font-family: "Courier New", Times, serif;
 }
 
-.waveTextAnimated span {
-    display: inline-block;
-    -webkit-animation: wave-text 1s ease-in-out infinite;
-            animation: wave-text 1s ease-in-out infinite;
+body {
+    background-image: url("background.png");
+    background-color: #cccccc;
 }
-
-Text Wave Effect in CSS Only
-by Ashfaq Ahmed
-Text Wave Effect in CSS Only
-Demo Download
-
-The CSS animation quite trending now days and front-end developers love to use to make their design unique. This tutorial is all about creating a wave text effect using CSS3 animation.
-Create a 5 Star Rating System in Ex...
-Remaining Time -8:12
-Create a 5 Star Rating System in Excel
-
-You can apply this effect on any text on your website. You can easily implement on paragraph or heading text. The animation give a nice looking dancing effect which look like a waves.
-
-For the purpose of creating wave animation is with the help of CSS3 animation and key-frames.
-Create HTML Structure
-
-Let’s start with HTML and define a div class name “waveTextAnimated“. Within the div we will put five span tags and each one hold one word from the text. In case your text longer then you need to define more span tags according to your text.
-
-<div class="waveTextAnimated">
-  <span>V</span>
-  <span>I</span>
-  <span>N</span>
-  <span>C</span>
-  <span>E</span>
-  <span>N</span>
-  <span>T</span>
-</div>
-
-
-.waveTextAnimated {
-    margin-top: 0.6em;
-    font-size: 50px;
-    text-align: center;
-}
-
-
-.waveTextAnimated span {
-  display: inline-block;
-  -webkit-animation: wave-text 1s ease-in-out infinite;
-          animation: wave-text 1s ease-in-out infinite;
-}
-
-
-.waveTextAnimated span:nth-of-type(1) {
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-}
-.waveTextAnimated span:nth-of-type(2) {
-  -webkit-animation-delay: 0.1s;
-          animation-delay: 0.1s;
-}
-.waveTextAnimated span:nth-of-type(3) {
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
-}
-.waveTextAnimated span:nth-of-type(4) {
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
-}
-.waveTextAnimated span:nth-of-type(5) {
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
-}
-.waveTextAnimated span:nth-of-type(6) {
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
-}
-.waveTextAnimated span:nth-of-type(7) {
-  -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
-}
-
-
-@-webkit-keyframes wave-text {
-    00% {
-      transform: translateY(0em);
-    }
-    60% {
-      transform: translateY(-0.6em);
-    }
-    100% {
-      transform: translateY(0em);
-    }
-  }
-  
-  @keyframes wave-text {
-    00% {
-      transform: translateY(0em);
-    }
-    60% {
-      transform: translateY(-0.6em);
-    }
-    100% {
-      transform: translateY(0em);
-    }
-  }

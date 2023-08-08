@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+
+{% load static %}
+
+{% block title %}
+    Diplôme
+{% endblock %}
+
+{% block content %}
+    <div id="name">
+        Formations
+    </div>
+
+    <div id="text">
+        <h4>Voici les formations que j'ai suivis:</h4>
+    </div>
+
+    <div>
+        <div class="card" style="width: 18rem; border-radius: 25px; margin: auto; margin-top: 15px; width: 70%;">
+            <img class="card-img-top" src="{% static 'portfolio/CS50x.png' %}" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">CS50 Introduction to Computer Science (CS50X)</p>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="card" style="width: 18rem; border-radius: 25px; margin: auto; margin-top: 15px; width: 70%;">
+        <img class="card-img-top" src="{% static 'portfolio/CS50P.png' %}" alt="Card image cap">
+        <div class="card-body">
+          <p class="card-text">CS50 Introduction to Programming with Python (CS50P)</p>
+        </div>
+    </div>
+
+    <div class="card" style="width: 18rem; border-radius: 25px; margin: auto; margin-top: 15px; width: 70%;">
+        <img class="card-img-top" src="{% static 'portfolio/openclassrooms.jpg' %}" alt="Card image cap" style="border: 1px solid;">
+        <div class="card-body">
+          <p class="card-text">Débutez avec le framework Django (OPENCLASSROOMS)</p>
+        </div>
+    </div>
+
+    
+
+{% endblock %}
